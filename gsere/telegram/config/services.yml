@@ -1,0 +1,23 @@
+services:
+    gsere.telegram.listener:
+        class: gsere\telegram\event\listener
+        arguments:
+            - @request
+            - @user
+            - @template
+            - @service_container
+            - %core.root_path%
+        tags:
+            - { name: event.listener }
+    notification.method.telegram:
+        class: gsere\telegram\notification\method\telegram
+        scope: prototype
+        arguments:
+            - @user_loader
+            - @user
+            - @language
+            - @config
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: notification.method }

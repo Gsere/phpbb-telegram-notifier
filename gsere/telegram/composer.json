@@ -1,0 +1,25 @@
+{
+	"name": "gsere/telegram",
+	"type": "phpbb-extension",
+	"description": "Allow users to receive alerts about new posts or private messages by Telegram app on their cell phone",
+	"version": "1.0.0",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "gsere",
+			"email": "gabriel@internet.com.uy",
+			"role": "Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"phpbb/epv": "dev-master"
+	},
+	"extra": {
+		"display-name": "gsere Telegram Notifier Method",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.4,<3.2.*@dev"
+		}
+	}
+}

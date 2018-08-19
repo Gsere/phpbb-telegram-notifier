@@ -1,0 +1,22 @@
+<!-- INCLUDE overall_header.html -->
+<h1>{L_ACP_TELEGRAM_TITLE}</h1>
+
+<form method="post" action="{U_ACTION}" enctype="multipart/form-data">
+<fieldset>
+	<legend>{L_ACP_SETTINGS}</legend>
+	<dl>
+		<dt><label for="sender">{L_ACP_SENDER}</label><br /><span>{L_ACP_SENDER_EXPLAIN}</span></dt>
+		<dd><input type="text" id="sender" name="sender" size="64" maxlength="255" value="{SENDER}" /></dd>
+	</dl>
+</fieldset>
+
+<fieldset>
+	<legend>{L_ACP_SUBMIT}</legend>
+	<p class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+	</p>
+	{S_FORM_TOKEN}
+</fieldset>
+</form>
+<!-- INCLUDE overall_footer.html -->
